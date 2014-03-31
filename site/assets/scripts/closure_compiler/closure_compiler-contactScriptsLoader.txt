@@ -1,0 +1,6 @@
+// ==ClosureCompiler==
+// @compilation_level SIMPLE_OPTIMIZATIONS
+// @output_file_name default.js
+// @code_url http://abtingramian.com/site/assets/scripts/uncompressed30/lazyload-min.js
+// @code_url http://abtingramian.com/site/assets/scripts/loadersToMin3/contactScriptsLoader-toMin.js
+// ==/ClosureCompiler==

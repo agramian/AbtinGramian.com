@@ -1,0 +1,7 @@
+// ==ClosureCompiler==
+// @compilation_level SIMPLE_OPTIMIZATIONS
+// @output_file_name default.js
+// @code_url http://abtingramian.com/site/assets/scripts/uncompressed30/smartresize.js
+// @code_url http://abtingramian.com/site/assets/scripts/uncompressed30/navigationBarScript.js
+// @code_url http://abtingramian.com/site/assets/scripts/uncompressed30/contactScript.js
+// ==/ClosureCompiler==

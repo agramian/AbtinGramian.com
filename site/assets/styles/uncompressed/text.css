@@ -1,0 +1,258 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Import Font
+----------------------------------------------------------------------------------------------------*/
+@font-face {
+ font-family: arial_black;
+ src: url("Web_Fonts/ariblk.eot");/* For IE 6+ */
+}
+@font-face {
+ font-family: arial_black;
+ src: url("Web_Fonts/ariblk.TTF"); /* For CSS3 browsers inc. Firefox */
+}
+@font-face {
+ font-family: bookman_old_style;
+ src: url("Web_Fonts/BOOKOS.eot");/* For IE 6+ */
+}
+@font-face {
+ font-family: bookman_old_style;
+ src: url("Web_Fonts/BOOKOS.TTF"); /* For CSS3 browsers inc. Firefox */
+}
+@font-face {
+ font-family: bookman_old_style_bold;
+ src: url("Web_Fonts/BOOKOSB.eot");/* For IE 6+ */
+}
+@font-face {
+ font-family: bookman_old_style_bold;
+ src: url("Web_Fonts/BOOKOSB.TTF"); /* For CSS3 browsers inc. Firefox */
+}
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  font-family: arial_black;
+  color:#000;
+  margin:0;
+  background-color:#000;
+}
+
+pre,
+code {
+  font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+A{text-decoration:none; cursor:pointer;}
+A:link  {color:#FFF;}
+A:visited {color:#FFF;}
+A:hover { color: #666;}
+
+input.text {
+font-family: bookman_old_style_bold; 
+border:1px solid black; 
+font-size:18px;
+}
+
+textarea {
+font-family: bookman_old_style; 
+border:1px solid black;
+padding:3px;
+min-width:440px;
+max-width:880px;
+min-height:100px;
+max-height:100px;
+}
+
+input.btn { 
+font-family: bookman_old_style_bold; 
+background-color: #CCC; 
+border:1px solid black;  
+}
+
+input.btnhov { 
+border-color: #FFF;
+color:#FFF;
+}
+
+input.text {
+border:1px solid black;
+padding:3px;
+width: 440px;
+}
+
+select {
+    border: 1px solid black;
+    width: 450px;
+}
+
+table, td
+{
+border-style:solid;
+border-width:1px;
+border-color:#000;
+background-color:#FFF;
+border-collapse:collapse;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+/* `Section Fonts
+----------------------------------------------------------------------------------------------------*/
+
+#header {
+	text-align:center;
+	font-size:72px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#scrollContent A:link  {color:#000;font-family: viner_hand_itc;}
+#scrollContent A:visited {color:#000;font-family: viner_hand_itc;}
+#scrollContent A:hover { color: #666;font-family: viner_hand_itc;}
+
+#titleBar {
+	background-color:#000; 
+	height:190px; 
+	width:100%;
+}
+
+.titleBarImg {
+    display:block;
+}
+
+#firstName {
+    visibility:hidden;
+    position:absolute; 
+    z-index:1;
+}
+
+#lastName {
+    visibility:hidden;
+    position:absolute;
+}
+
+#mainContent {
+	margin: 0;
+	width:100%;
+	font: 24px/2.0 bookman_old_style_bold; 
+}
+
+#navigationBar {
+	margin: 0 0 0 10px;
+}
+
+.navButton {
+    position:relative; 
+    width:188px; 
+    float:left;
+}
+
+.navButtonImg {
+    visibility:hidden;
+    display:block;
+    border:0px;
+}
+
+#drawingCanvas {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+
+#aboutText {
+    font-size: 20px;
+}
+#aboutFooter {
+    font-size:16px;
+    bottom:0px;
+    width:inherit;
+    position:absolute;
+}
+#abtinPortrait {
+    float:left;
+    visibility:hidden;
+    margin-right:50px;
+}
+#messageInfo {
+	color:#F00;
+	font-size: smaller;
+	line-height: 1.0;
+}
+
+#contactPageContent {
+	color:#FFF;
+	font-size:20px;
+	line-height: 1.5;
+}
