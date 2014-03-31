@@ -1,0 +1,19 @@
+@font-face {
+ font-family: nu_century_gothic;
+ src: url("Web_Fonts/nu_century_gothic.eot");/* For IE 6+ */
+}
+@font-face {
+ font-family: nu_century_gothic;
+ src: url("Web_Fonts/nu_century_gothic.ttf"); /* For CSS3 browsers inc. Firefox */
+}
+
+A:link  {color: #FFF;}
+A:visited {color:#FFF;}
+A:hover { color: #666;}
+
+body {
+	background-color: #000;
+	font-family: nu_century_gothic;
+	color: #FFF;
+	text-align: center;
+}

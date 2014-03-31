@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Character Quiz</title>
+<style type="text/css">
+<!--
+-->
+</style>
+
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"> 
+<link href="../styles/Dee_style.css" rel="stylesheet" type="text/css" />
+<link href="../styles/Mac_style.css" rel="stylesheet" type="text/css" />
+<link href="../styles/Dennis_style.css" rel="stylesheet" type="text/css" />
+<link href="../styles/Charlie_style.css" rel="stylesheet" type="text/css" />
+<link href="../styles/Frank_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../javascript/cookies.js"></script>
+<script type="text/javascript" src="../javascript/character_quiz.js"></script>
+<script type="text/javascript" src="../javascript/load_images.js"></script>
+
+</head>
+
+<body onload="getCookie('fav');MM_preloadImages('../Buttons/back_selected.png','../Buttons/back_over.png','../Buttons/home_selected.png','../Buttons/home_over.png')">
+<center>
+<table width="80%" id="Character_Quiz">
+  <form id="Quiz" name="Quiz" method="post" action="">
+  <tr>
+    <td colspan="2" align="center" style="border:none; padding:5px;"><font size="+3">Who in &quot;The Gang&quot; are you most similar to?</font></td>
+    </tr>
+  <tr>
+    <td width="50%" align="right" style="border:none; padding:5px;">
+      Choose a pet:
+    </td>
+    <td width="50%" align="left" style="border:none; padding:5px;">
+      <p>
+        <label>
+          <input type="radio" name="Pet" value="fffffccccmmmdds" id="Pet_0" />
+          Junkyard Dog</label>
+        <br />
+        <label>
+          <input type="radio" name="Pet" value="dddddffffcccmms" id="Pet_1" />
+          Badass Cat</label>
+        <br />
+        <label>
+          <input type="radio" name="Pet" value="mmmmmssssdddffc" id="Pet_2" />
+          Dumpster Baby</label>
+        <br />
+        <label>
+          <input type="radio" name="Pet" value="cccccssssmmmddf" id="Pet_3" />
+          Patriotic American Eagle</label>
+        <br />
+        <label>
+          <input type="radio" name="Pet" value="sssssddddcccmmf" id="Pet_4" />
+          Retarded Person</label>
+        <br />
+      </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">Choose a song:</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Song" value="dddddsssscccmmf" id="Song_0" />
+        Rick Astley - &quot;Never Gonna Give You Up</label>&quot;
+      <br />
+      <label>
+        <input type="radio" name="Song" value="cccccmmmmdddssf" id="Song_1" />
+        Berlin - &quot;Take My Breath Away</label>&quot;
+      <br />
+      <label>
+        <input type="radio" name="Song" value="mmmmmffffcccssd" id="Song_2" />
+        Ray Parker Jr. - &quot;Ghostbusters</label>&quot;
+      <br />
+      <label>
+        <input type="radio" name="Song" value="fffffmmmmdddccs" id="Song_3" />
+        Unknown Artist - &quot;Go for it!</label>&quot;
+      <br />
+      <label>
+        <input type="radio" name="Song" value="sssssccccmmmddf" id="Song_4" />
+        Alphaville - &quot;Forever Young&quot;</label>
+      <br />
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What do you look for in a sexual partner or mate?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Mate" value="fffffccccdddmms" id="RadioGroup1_0" />
+        Bangmaid</label>
+      <br />
+      <label>
+        <input type="radio" name="Mate" value="cccccddddsssffm" id="RadioGroup1_1" />
+        Sexual woman</label>
+      <br />
+      <label>
+        <input type="radio" name="Mate" value="mmmmmffffcccssd" id="RadioGroup1_2" />
+        Tranny</label>
+      <br />
+      <label>
+        <input type="radio" name="Mate" value="dddddmmmmcccffs" id="RadioGroup1_3" />
+        A Real Girl Gone Wild</label>
+      <br />
+      <label>
+        <input type="radio" name="Mate" value="sssssmmmmfffddc" id="RadioGroup1_4" />
+        Anything that Moves</label>
+      <br />
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What's secret talent(s) do you possess?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Talent" value="mmmmmccccfffssd" id="Talent_0" />
+        Karate</label>
+      <br />
+      <label>
+        <input type="radio" name="Talent" value="fffffmmmmcccdds" id="Talent_1" />
+        Gambling/Scheming/Running Sweatshops</label>
+      <br />
+      <label>
+        <input type="radio" name="Talent" value="dddddssssmmmccf" id="Talent_2" />
+        Sexy bod</label>
+      <br />
+      <label>
+        <input type="radio" name="Talent" value="sssssddddmmmffc" id="Talent_3" />
+        Being a dirty,dirty, whore</label>
+      <br />
+      <label>
+        <input type="radio" name="Talent" value="cccccssssmmmddf" id="Talent_4" />
+        Piano, cooking, sewing, writing musicals, stalking</label>
+      <br />
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What is your favorite drug and/or illicit substance?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Drug" value="cccccmmmmfffssd" id="Drug_0" />
+        Paint/Glue</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="dddddsssscccmmf" id="Drug_1" />
+        Crack</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="fffffddddsssmmc" id="Drug_2" />
+        Marijuana</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="sssssccccmmmffd" id="Drug_3" />
+        Steroids</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="fffffccccsssmmd" id="Drug_4" />
+        LSD</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="sssssddddmmmffc" id="Drug_5" />
+        Alcohol</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="mmmmmccccfffssd" id="Drug_6" />
+        Poppers</label>
+      <br />
+      <label>
+        <input type="radio" name="Drug" value="dddddsssscccffm" id="Drug_7" />
+        Ecstasy</label>
+      <br />      
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What is your role in the crew? How do you complete the paradigm?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Crew" value="mmmmmffffdddssc" id="Crew_0" />
+        Brains</label>
+      <br />
+      <label>
+        <input type="radio" name="Crew" value="fffffmmmmsssccd" id="Crew_1" />
+        Muscle</label>
+      <br />
+      <label>
+        <input type="radio" name="Crew" value="dddddssssmmmccf" id="Crew_2" />
+        Looks</label>
+      <br />
+      <label>
+        <input type="radio" name="Crew" value="cccccmmmmfffssd" id="Crew_3" />
+        Wildcard</label>
+      <br />
+      <label>
+        <input type="radio" name="Crew" value="sssssccccfffddm" id="Crew_4" />
+        Useless Chick</label>
+      <br />                        
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">How would you describe your dance moves?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Dance" value="mmmmmccccdddssf" id="Dance_0" />
+        Very Specifically Choreographed</label>
+      <br />
+      <label>
+        <input type="radio" name="Dance" value="cccccmmmmdddffs" id="Dance_1" />
+        Like the white hot cream of an 8th grade boy</label>
+      <br />
+      <label>
+        <input type="radio" name="Dance" value="fffffmmmmdddssc" id="Dance_2" />
+        "The move"</label>
+      <br />  
+      <label>
+        <input type="radio" name="Dance" value="dddddmmmmcccssf" id="Dance_3" />
+        Like those of a professional dance instructor</label>
+      <br />    
+      <label>
+        <input type="radio" name="Dance" value="dddddmmmmfffssc" id="Dance_4" />
+        Grinding</label>
+      <br />          
+      <label>
+        <input type="radio" name="Dance" value="sssssffffmmmddc" id="Dance_5" />
+        Don't really get into it that much</label>
+      <br />          
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What weapon gets the job done best for you?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Weapon" value="cccccddddmmmssf" id="Weapon_0" />
+        Ali Baba Sword</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="fffffssssdddmmc" id="Weapon_1" />
+        Handgun</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="cccccmmmmfffdds" id="Weapon_2" />
+        Conveyor Belt with Chopping Mechanism</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="cccccmmmmdddssf" id="Weapon_3" />
+        Flaming Bag of Feces</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="sssssccccmmmmffd" id="Weapon_4" />
+        Hands/Fists</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="dddddmmmmsssccf" id="Weapon_5" />
+        Mouth</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="fffffccccmmmdds" id="Weapon_6" />
+        Chainsaw</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="mmmmmssssfffccd" id="Weapon_7" />
+        Mini-bat</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="mmmmmccccdddssf" id="Weapon_8" />
+        Nunchucks</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="dddddmmmmcccssf" id="Weapon_9" />
+        Steel Toe Boot</label>
+      <br />  
+      <label>
+        <input type="radio" name="Weapon" value="mmmmmddddfffssc" id="Weapon_10" />
+        Wristband with Safety Pins</label>
+      <br />
+      <label>
+        <input type="radio" name="Weapon" value="cccccmmmmsssddf" id="Weapon_11" />
+        Crossbow</label>    
+      <br />            
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What's your favorite food?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Food" value="sssssccccfffmmd" id="Food_0" />
+        Human Meat</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="dddddsssscccffd" id="Food_1" />
+        Can of Beans</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="cccccffffmmmssd" id="Food_2" />
+        Grilled Charlie</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="cccccddddsssffm" id="Food_3" />
+        Mimosa</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="mmmmmffffdddccs" id="Food_4" />
+        Hot Dog</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="cccccmmmmfffssd" id="Food_5" />
+        Donuts/Pastries</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="cccccssssfffmmd" id="Food_6" />
+        Sub sandwich</label>
+      <br />
+      <label>
+        <input type="radio" name="Food" value="sssssddddcccmmf" id="Food_7" />
+        None. Throwing up</label>
+      <br />
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">Choose an article of clothing:</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Clothing" value="cccccssssmmmffd" id="clothing_0" />
+        Army surplus jacket</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="dddddssssfffmmc" id="clothing_1" />
+        Cardigan sweater</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="mmmmmffffcccssd" id="clothing_2" />
+        Sleeveless tee</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="sssssccccdddffm" id="clothing_3" />
+        Pants Suit</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="mmmmmccccdddffs" id="clothing_4" />
+        Combat boots</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="mmmmmddddcccffs" id="clothing_5" />
+        Leather duster</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="sssssccccdddmmf" id="clothing_6" />
+        Bell dress</label>
+      <br />
+      <label>
+        <input type="radio" name="Clothing" value="cccccffffmmmssd" id="clothing_7" />
+        Long johns</label>
+      <br />      
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">Choose a costume:</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Costume" value="cccccssssmmmffd" id="costume_0" />
+        Greenman</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccffffmmmssd" id="costume_1" />
+        War Veteran</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddmmmmsssffc" id="costume_2" />
+        Polio patient</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddmmmmcccffs" id="costume_3" />
+        Terrorist</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccffffmmmdds" id="costume_4" />
+        Campaign Manager</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="sssssddddmmmffc" id="costume_5" />
+        Dirty, drunken, whore</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmccccfffdds" id="costume_6" />
+        Tuxedo</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccmmmmdddssf" id="costume_7" />
+        All-white suit</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmffffcccdds" id="costume_8" />
+        All-black suit (No coat)</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccmmmmffffssd" id="costume_9" />
+        Cholo/Thug</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffcccccmmmmssd" id="costume_10" />
+        Bum</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmddddsssffc" id="costume_11" />
+        Football Gear</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffmmmmcccdds" id="costume_12" />
+        John McClane </label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="sssssccccdddmmf" id="costume_13" />
+        McPoyle robe and underwear</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddssssmmmccf" id="costume_14" />
+        Plastic silver dress</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddsssscccmmf" id="costume_15" />
+        Diaper, bib, and baby tiara</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddssssfffmmc" id="costume_16" />
+        Club Kid</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="sssssddddcccffm" id="costume_17" />
+        Psycho Clown</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddsssscccmmf" id="costume_18" />
+        Surgeon</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddssssfffccm" id="costume_19" />
+        Chris Hansen</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccffffdddssm" id="costume_20" />
+        Lawyer</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddmmmmsssffc" id="costume_21" />
+        Anything with no shirt to show off those amazing pecks</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddssssfffmmc" id="costume_22" />
+        Gigolo</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffssssmmmddc" id="costume_23" />
+        Sea Captain</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmddddcccssf" id="costume_24" />
+        Tracksuit</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmssss" id="costume_25" />
+        Guardian Angel</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffddddcccmms" id="costume_26" />
+        Police Officer</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccddddfffmms" id="costume_27" />
+        Serpico</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="mmmmmddddfffccs" id="costume_28" />
+        Camo</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccddddmmmffs" id="costume_29" />
+        Oil Salesman</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffddddcccmms" id="costume_30" />
+        Psych patient</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccddddsssmmf" id="costume_31" />
+        Bob Dylan</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddccccfffssm" id="costume_32" />
+        Glam Rocker</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffmmmmcccdds" id="costume_33" />
+        Rambo</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="cccccssssmmmffd" id="costume_34" />
+        Referee</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="fffffddddsssccm" id="costume_35" />
+        Liberal yahoo</label>
+      <br />
+      <label>
+        <input type="radio" name="Costume" value="dddddffffcccssm" id="costume_36" />
+        Hippie</label>
+      <br />          
+      <label>
+        <input type="radio" name="Costume" value="dddddssssfffccm" id="costume_37" />
+        Suburban tool weekend warrior with mousse kaufen hairspray</label>
+      <br />            
+      <label>
+        <input type="radio" name="Costume" value="dddddsssscccffm" id="costume_38" />
+        A Mary whose the bell of the ball</label>
+      <br />       
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What's your main mode of transportation?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Transportation" value="dddddssssmmmffc" id="transportation_0" />
+        Range Rover</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="cccccffffdddmms" id="transportation_1" />
+        Wheelchair</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="fffffmmmmcccdds" id="transportation_2" />
+        Rape Van</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="fffffddddcccssm" id="transportation_3" />
+        Police cruiser</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="mmmmmccccfffdds" id="transportation_4" />
+        Limo</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="sssssccccmmmffd" id="transportation_5" />
+        Bus</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="mmmmmffffdddssc" id="transportation_6" />
+        Golf Cart</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="cccccddddfffmms" id="transportation_7" />
+        Dancing</label>
+      <br />
+      <label>
+        <input type="radio" name="Transportation" value="sssssccccfffmmd" id="transportation_8" />
+        Crutches</label>
+      <br />      
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">Pick an Accessory:</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Accessory" value="fffffmmmmdddccs" id="Accessory_0" />
+        Toupee</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="cccccddddfffmms" id="Accessory_1" />
+        Bandana</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="fffffccccdddssm" id="Accessory_2" />
+        Glasses</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="sssssddddcccmmf" id="Accessory_3" />
+        Bicycle Helmet</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="dddddmmmmfffccs" id="Accessory_4" />
+        Polio leg blanket</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="sssssffffcccmmd" id="Accessory_5" />
+        Boxing gloves </label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="mmmmmccccfffssd" id="Accessory_6" />
+        Leather gloves</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="mmmmmddddfffccs" id="Accessory_7" />
+        Turban</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="cccccssssfffmmd" id="Accessory_8" />
+        Jean jacket</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="cccccffffmmmdds" id="Accessory_9" />
+        Clipboard</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="cccccssssdddffm" id="Accessory_10" />
+        Apron</label>
+      <br />
+      <label>
+        <input type="radio" name="Accessory" value="sssssmmmmdddffc" id="Accessory_11" />
+        Steven the Vibrator</label>
+      <br />      
+    </p></td>
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">How do you react in a situation when you feel social pressure or nervousness?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Pressure" value="cccccssssmmmddf" id="Pressure_0" />
+        Vomit</label>
+      <br />
+	  <label>
+        <input type="radio" name="Pressure" value="cccccffffsssmmd" id="Pressure_1" />
+        Freeze up, become motionless, silent, and inarticulate</label>
+      <br />
+      <label>
+        <input type="radio" name="Pressure" value="mmmmmddddcccssf" id="Pressure_2" />
+        Run away</label>
+      <br />
+      <label>
+        <input type="radio" name="Pressure" value="cccccmmmmsssddf" id="Pressure_3" />
+        Turn red and become flushed</label>
+      <br />
+      <label>
+        <input type="radio" name="Pressure" value="mmmmmssssdddccf" id="Pressure_4" />
+        Let out some nervous anger physically (maybe a gesture) or through speech (an insult perhaps)</label>
+      <br /> 
+      <label>
+        <input type="radio" name="Pressure" value="fffffccccsssmmd" id="Pressure_5" />
+        Make a face</label>
+      <br />
+      <label>
+        <input type="radio" name="Pressure" value="cccccddddsssmmf" id="Pressure_6" />
+        Cry, sob or bawl</label>
+      <br />     
+    </p></td>
+  </tr>  
+  <tr>
+    <td align="right" style="border:none; padding:5px;">What are you most insecure about?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="Insecurity" value="sssssddddcccmmf" id="Insecurity_0" />
+        Physical Appearance</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="mmmmmsssscccddf" id="Insecurity_1" />
+        Childhood</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="sssssmmmmcccffd" id="Insecurity_2" />
+        High School</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="mmmmmffffcccssd" id="Insecurity_3" />
+        Family</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="sssssddddfffmmc" id="Insecurity_4" />
+        Failure/Missed Opportunities</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="sssssccccffffmmd" id="Insecurity_5" />
+        Illness/Disability</label>
+      <br />
+      <label>
+        <input type="radio" name="Insecurity" value="dddddssssmmmccf" id="Insecurity_6" />
+        Your future</label>
+      <br />
+    </p></td>
+  </tr> 
+  <tr>
+    <td align="right" style="border:none; padding:5px;">How do you let out your anger and frustration? How do you boost your self-confidence?</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+    <label>
+      <input type="radio" name="Escape" value="sssssmmmmcccffd" id="Escape_0" />
+      Punching things</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="cccccmmmmsssddf" id="Escape_1" />
+        Yelling/Screaming/Arguing/Berating people for absolutely no reason</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="fffffssssmmmddc" id="Escape_2" />
+        Shooting things</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="sssssddddmmmffc" id="Escape_3" />
+        Banging a bunch of random people</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="cccccssssmmmddf" id="Escape_4" />
+        Drugs/Alcohol</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="cccccmmmmdddffs" id="Escape_5" />
+        Breaking Bottles</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="mmmmmssssdddccf" id="Escape_6" />
+        Fighting/Boxing/Wrestling</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="cccccmmmmdddssf" id="Escape_7" />
+        Setting things on fire</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="fffffccccdddmms" id="Escape_8" />
+        Dancing</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="dddddffffmmmssc" id="Escape_9" />
+        Lying, Cheating, Stealing, and taking advantage of others</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="sssssmmmmfffddc" id="Escape_10" />
+      Sitting in judgment of others to make yourself feel better</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="mmmmmccccfffssd" id="Escape_11" />
+      Getting it, reading, watching movies, understanding</label>
+      <br />
+      <label>
+        <input type="radio" name="Escape" value="mmmmmccccfffssd" id="Escape_12" />
+      Trying to do some good and getting screwed for it</label>
+      <br />
+      </p></td>      
+  </tr>
+  <tr>
+    <td align="right" style="border:none; padding:5px;">It's all about...</td>
+    <td align="left" style="border:none; padding:5px;"><p>
+      <label>
+        <input type="radio" name="About" value="mmmmmccccfffdds" id="About_0" />
+        Little boys becoming happy again</label>
+      <br />
+      <label>
+        <input type="radio" name="About" value="cccccffffsssmmd" id="About_1" />
+        Two men sharing their lives, their arms, and their homes together</label>
+      <br />      
+      <label>
+        <input type="radio" name="About" value="sssssddddmmmffc" id="About_2" />
+        Achieving childhood dreams and becoming famous</label>
+      <br /> 
+      <label>
+        <input type="radio" name="About" value="dddddccccsssmmmffd" id="About_3" />
+        Helping people, doing good, and contributing to society</label>
+      <br />  
+      <label>
+        <input type="radio" name="About" value="fffffmmmmdddssc" id="About_4" />
+        Lying, cheating, stealing, gambling, backstabbing, scheming, arson, sex, shady gangster shit, and coming out on top with huge chunks of dough</label>
+      <br />           
+    </p></td>
+  </tr>  
+  <tr>
+    <td align="right" style="border:none; padding:5px;">Click to view result</td>
+    <td align="left" style="border:none; padding:5px;"><input type="button" name="quiz_results" id="quiz_results" value="View Result" class="btn" onmouseover="this.className='btn btnhov'" onmouseout="this.className='btn'"onclick = "checkResults()"/></td>
+  </tr>
+  <tr valign="middle">
+    <td height="154" colspan="2" align="center" style="border:none; padding:5px;"><a href="bonus.html" target="_top" onclick="MM_nbGroup('down','group1','Back','../Buttons/back_selected.png',1)" onmouseover="MM_nbGroup('over','Back','../Buttons/back_over.png','../Buttons/back_selected.png',1)" onmouseout="MM_nbGroup('out')"><img src="../Buttons/back_normal.png" alt="Return Back to Bonus Page" name="Back" border="0" id="Back" onload="" /></a> <a href="../index.html" target="_top" onclick="MM_nbGroup('down','group1','Home','../Buttons/home_selected.png',1)" onmouseover="MM_nbGroup('over','Home','../Buttons/home_over.png','../Buttons/home_selected.png',1)" onmouseout="MM_nbGroup('out')"><img name="Home" src="../Buttons/home_normal.png" border="0" alt="Return to Home Page" onload="" /></a><br />      
+      <br /></td>
+    </tr>
+  </form>
+</table>
+</center>
+
+<noscript>
+</body>
+</html>
