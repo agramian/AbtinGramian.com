@@ -1,0 +1,69 @@
+ErrorDocument 401 /assets/error_page/error.php 
+
+ErrorDocument 403 /assets/error_page/error.php
+ErrorDocument 404 /assets/error_page/error.php
+
+ErrorDocument 405 /assets/error_page/error.php
+
+ErrorDocument 406 /assets/error_page/error.php
+
+ErrorDocument 407 /assets/error_page/error.php
+
+ErrorDocument 408 /assets/error_page/error.php
+
+ErrorDocument 409 /assets/error_page/error.php
+
+ErrorDocument 410 /assets/error_page/error.php
+
+ErrorDocument 411 /assets/error_page/error.php
+
+ErrorDocument 412 /assets/error_page/error.php
+
+ErrorDocument 413 /assets/error_page/error.php
+
+ErrorDocument 414 /assets/error_page/error.php
+
+ErrorDocument 415 /assets/error_page/error.php
+
+ErrorDocument 500 /assets/error_page/error.php
+
+ErrorDocument 501 /assets/error_page/error.php
+
+ErrorDocument 502 /assets/error_page/error.php
+
+ErrorDocument 503 /assets/error_page/error.php
+
+ErrorDocument 504 /assets/error_page/error.php
+
+ErrorDocument 505 /assets/error_page/error.php
+
+
+
+AddType audio/mpeg .mp3
+
+AddType audio/ogg .ogg
+
+AddType audio/wav .wav
+
+AddType video/mp4 .mp4
+
+AddType video/ogg .ogv
+
+AddType video/webm .webm
+AddType application/x-java-jnlp-file .jnlp
+RewriteEngine On
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_URI} error/(images|styles|styles/Web_Fonts)/([^/]+)$ [NC]
+RewriteRule  (images|styles|styles/Web_Fonts)/([^/]+)$ site/assets/$1/$2 [L]
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?abtingramian.*$ [NC]
+RewriteRule \.(jpg|js|css)$ - [R=403,L]
+RewriteCond %{REQUEST_URI} !/web/.*/styles/.*$ [NC]
+RewriteRule  (images|scripts|cv|styles|styles/Web_Fonts)/([^/]+)$ site/assets/$1/$2 [L]
+RewriteCond %{REQUEST_URI} !.*/(scripts/scripts).*$ [NC]
+RewriteRule  /(scripts/.*)$ site/assets/$1 [L]
+RewriteRule  (art2D.*|art3D.*|audio.*|code.*|design.*|games.*|web.*)$ site/assets/work/$1 [L]
+RewriteRule .*/(home/home|about/about|work/work|resume/resume|contact/contact).* - [NC,R=404]
+RewriteRule site/(home|about|work|resume|contact)(/[^/]+)?$ site/index.php?$1$2 [L]
