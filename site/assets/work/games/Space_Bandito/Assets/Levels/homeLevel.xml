@@ -1,0 +1,23 @@
+<level>
+	<assets>
+		<asset file="Assets/Sprites/Backgrounds/homeLevel.swf" backgroundClass="HomeLevel" levelNum="1"/>
+		<asset file="Assets/Sprites/Player/player.swf"/>
+		<asset file="Assets/Sprites/HUD/gameHUD.swf"/>
+		<asset file="Assets/Sprites/HUD/crossHair.swf"/>
+		<asset file="Assets/Sprites/Weapons/projectile.swf"/>
+		<asset file="Assets/Sprites/Items/items.swf"/>
+		<asset file="Assets/Sprites/Enemies/enemies.swf"/>
+		<asset file="Assets/Sprites/Effects/effects.swf"/>
+	</assets>
+	<enemies>
+		<enemy spriteClass="Turret" name="enemy1" x="830" y="502" />
+		<enemy spriteClass="FlyingEnemy" name="enemy2" x="800" y="805" />
+		<enemy spriteClass="Turret" name="enemy3" x="365" y="760" />
+		<enemy spriteClass="FlyingEnemy" name="enemy4" x="235" y="580" />
+		<enemy spriteClass="Turret" name="enemy5" x="480" y="560" />
+		<enemy spriteClass="Turret" name="enemy6" x="650" y="230" />
+	</enemies>
+	<player>
+		<spawnLocation x = "330" y = "185" />
+	</player>
+</level>

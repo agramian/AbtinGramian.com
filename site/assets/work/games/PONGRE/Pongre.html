@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Abtin Gramian's Pongre</title>
+	</head>
+	<body style="background-color:#FFFFFF;margin: 0px;border: 0px;" onload="createApplet()">
+    	<div id="appletDiv">
+        </div>
+        <script>
+		
+			function createApplet() {
+				if(navigator.platform.indexOf("Win")!=-1) {
+				    var width = window.innerWidth;
+				    var height = window.innerHeight;
+					var appletContent = "<object id='pongrePlayer' name='Pongre' classid='java:Launcher.class' type='application/x-java-applet' width='"+width+"px' height='"+height+"px'><param name='jnlp_href' value='PONGRE_WIN/pongre.jnlp' /><param name='mWidth' value='"+width+"' /><param name='mHeight' value='"+height+"' /><param name='separate_jvm' value='true' /></object>";
+				}
+				else if(navigator.platform.indexOf("Mac")!=-1){
+		            var width = window.parent.document.getElementById("gameDiv").offsetWidth;
+                    var height = window.parent.document.getElementById("gameDiv").offsetHeight;
+					var appletContent = "<applet id='pongrePlayer' name='Abtin Gramian\'s Pongre' code='Launcher' width="+width+" height="+height+"><param name='jnlp_href' value='PONGRE_MAC/pongre.jnlp' /><param name='mWidth' value='"+width+"' /><param name='mHeight' value='"+height+"' /><param name='codebase_lookup' value='false' /><param name='separate_jvm' value='true' /></applet>";
+				}
+				document.getElementById("appletDiv").innerHTML= appletContent;
+			}
+		</script>
+	</body>
+</html>

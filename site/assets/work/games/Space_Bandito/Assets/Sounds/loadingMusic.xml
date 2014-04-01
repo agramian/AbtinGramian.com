@@ -1,0 +1,5 @@
+<sounds>
+	<assets>
+		<asset file="Assets/Sounds/loadingMusic.swf" soundClass="loadingMusic" name="loadingMusic"/>
+	</assets>
+</sounds>

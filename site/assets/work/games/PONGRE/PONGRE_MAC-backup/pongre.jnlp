@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp href="pongre.jnlp">
+    <information>
+        <title>Abtin Gramian's Pongre</title>
+        <vendor>AbtinGramian.com</vendor>
+        <offline-allowed/> 
+    </information>
+    
+    <resources>
+        <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se" ava-vm-args="-XstartOnFirstThread"/>
+        <jar href="pongre.jar" main="true" />
+    </resources>
+    
+    <resources os="Mac">
+        <nativelib href="swt.jar"/>
+    </resources>
+    
+	<applet-desc name="Abtin Gramian's Pongre" main-class="Launcher" width="720" height="405">
+	</applet-desc>
+</jnlp>

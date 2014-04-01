@@ -1,0 +1,29 @@
+<sounds>
+	<assets>
+		<asset file="Assets/Sounds/outerSpaceMusic.swf" soundClass="outerSpaceMusic" name="outerSpaceMusic"/>
+		<asset file="Assets/Sounds/homeLevelMusic.swf" soundClass="homeLevelMusic" name="homeLevelMusic"/>
+		<asset file="Assets/Sounds/insideCloudsLevelMusic.swf" soundClass="insideCloudsLevelMusic" name="insideCloudsLevelMusic"/>
+		<asset file="Assets/Sounds/outsideCloudsLevelMusic.swf" soundClass="outsideCloudsLevelMusic" name="outsideCloudsLevelMusic"/>
+		<asset file="Assets/Sounds/pauseMusic.swf" soundClass="pauseMusic" name="pauseMusic"/>
+		<asset file="Assets/Sounds/collectOrbSounds.swf" soundClass="collectOrbSound" variations="6" name="collectOrbSound"/>
+		<asset file="Assets/Sounds/explosionSounds.swf" soundClass="explosionSound" variations="6" name="explosionSound"/>
+		<asset file="Assets/Sounds/playerLaserSounds.swf" soundClass="playerLaserSound" variations="7" name="playerLaserSound"/>
+		<asset file="Assets/Sounds/playerMissileSounds.swf" soundClass="playerMissileSound" variations="5" name="playerMissileSound"/>
+		<asset file="Assets/Sounds/enemyLaserSounds.swf" soundClass="enemyLaserSound" variations="7" name="enemyLaserSound"/>
+		<asset file="Assets/Sounds/enemyFireSounds.swf" soundClass="enemyFireSound" variations="5" name="enemyFireSound"/>
+		<asset file="Assets/Sounds/orbBarFullSound.swf" soundClass="orbBarFullSound" name="orbBarFullSound"/>
+		<asset file="Assets/Sounds/orbBarEmptySound.swf" soundClass="orbBarEmptySound" name="orbBarEmptySound"/>
+		<asset file="Assets/Sounds/movePlaneUpLevelSound.swf" soundClass="movePlaneUpLevelSound" name="movePlaneUpLevelSound"/>
+		<asset file="Assets/Sounds/movePlaneDownLevelSound.swf" soundClass="movePlaneDownLevelSound" name="movePlaneDownLevelSound"/>
+		<asset file="Assets/Sounds/switchWeaponSound.swf" soundClass="switchWeaponSound" name="switchWeaponSound"/>
+		<asset file="Assets/Sounds/noAmmoSound.swf" soundClass="noAmmoSound" name="noAmmoSound"/>
+		<asset file="Assets/Sounds/menuOverSound.swf" soundClass="menuOverSound" name="menuOverSound"/>
+		<asset file="Assets/Sounds/menuDownSound.swf" soundClass="menuDownSound" name="menuDownSound"/>
+		<asset file="Assets/Sounds/playerDeadStinger.swf" soundClass="playerDeadStinger" name="playerDeadStinger"/>
+		<asset file="Assets/Sounds/levelCompleteStinger.swf" soundClass="levelCompleteStinger" name="levelCompleteStinger"/>
+		<asset file="Assets/Sounds/damageSounds.swf" soundClass="damageSound" variations="4" name="damageSound"/>
+		<asset file="Assets/Sounds/shieldHitSounds.swf" soundClass="shieldHitSound" variations="5" name="shieldHitSound"/>
+		<asset file="Assets/Sounds/shieldDepletedSound.swf" soundClass="shieldDepletedSound" name="shieldDepletedSound"/>
+		<asset file="Assets/Sounds/planeEvolveDevolveSound.swf" soundClass="planeEvolveDevolveSound" name="planeEvolveDevolveSound"/>
+	</assets>
+</sounds>

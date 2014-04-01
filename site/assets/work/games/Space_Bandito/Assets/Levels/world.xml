@@ -1,0 +1,21 @@
+<level>
+	<assets>
+		<asset file="Assets/Sprites/Backgrounds/background.swf" backgroundClass="Background" levelNum="0"/>
+		<asset file="Assets/Sprites/Player/player.swf"/>
+		<asset file="Assets/Sprites/HUD/gameHUD.swf"/>
+		<asset file="Assets/Sprites/HUD/crossHair.swf"/>
+		<asset file="Assets/Sprites/Weapons/projectile.swf"/>
+		<asset file="Assets/Sprites/Items/items.swf"/>
+		<asset file="Assets/Sprites/Enemies/enemies.swf"/>
+		<asset file="Assets/Sprites/Effects/effects.swf"/>
+	</assets>
+	<items>
+		<item spriteClass="YellowOrb" type="YellowOrb" name="yellowOrb" x="100" y="100" points="100"/>
+		<item spriteClass="RedOrb" type="RedOrb" name="redOrb" x="100" y="400" points="100"/>
+		<item spriteClass="BlueOrb" type="BlueOrb" name="blueOrb" x="500" y="400" points="100"/>
+		<item spriteClass="GreenOrb" type="GreenOrb" name="greenOrb" x="500" y="100" points="100"/>
+	</items>
+	<player>
+		<spawnLocation x = "320" y = "240" />
+	</player>
+</level>

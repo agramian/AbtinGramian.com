@@ -1,0 +1,1 @@
+﻿package com.Engine.Sprites {		public interface IItem extends ISprite {				function get points():Number;		function set points(value:Number):void;		function get type():String;		function set type(value:String):void;		function pickUp():void;			}}

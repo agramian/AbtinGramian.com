@@ -1,0 +1,20 @@
+<level>
+	<assets>
+		<asset file="Assets/Sprites/Backgrounds/outsideCloudsLevel.swf" backgroundClass="OutsideCloudsLevel" levelNum="3"/>
+		<asset file="Assets/Sprites/Player/player.swf"/>
+		<asset file="Assets/Sprites/HUD/gameHUD.swf"/>
+		<asset file="Assets/Sprites/HUD/crossHair.swf"/>
+		<asset file="Assets/Sprites/Weapons/projectile.swf"/>
+		<asset file="Assets/Sprites/Items/items.swf"/>
+		<asset file="Assets/Sprites/Enemies/enemies.swf"/>
+		<asset file="Assets/Sprites/Effects/effects.swf"/>
+	</assets>
+	<enemies>
+		<enemy spriteClass="Turret" name="enemy1" x="420" y="470" />
+		<enemy spriteClass="FlyingEnemy" name="enemy2" x="780" y="770" />
+		<enemy spriteClass="FlyingEnemy" name="enemy3" x="125" y="95" />
+	</enemies>
+	<player>
+		<spawnLocation x = "450" y = "855" />
+	</player>
+</level>

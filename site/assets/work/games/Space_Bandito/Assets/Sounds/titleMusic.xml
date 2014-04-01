@@ -1,0 +1,8 @@
+<sounds>
+	<assets>
+		<asset file="Assets/Sounds/titleMusic.swf" soundClass="titleMusic" name="titleMusic"/>
+		<asset file="Assets/Sounds/menuOverSound.swf" soundClass="menuOverSound" name="menuOverSound"/>
+		<asset file="Assets/Sounds/menuDownSound.swf" soundClass="menuDownSound" name="menuDownSound"/>
+		<asset file="Assets/Sounds/gameOverStinger.swf" soundClass="gameOverStinger" name="gameOverStinger"/>
+	</assets>
+</sounds>
